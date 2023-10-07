@@ -1,1 +1,8 @@
+@use "core/resets";
+@use "core/globals";
 @use "./components/images";
+@use "./variables/colors";
+
+h2 {
+  color: colors.$primary-color;
+}
