@@ -13,4 +13,12 @@
     transform: rotate(90deg);
     color: #fff;
   }
+  &--right {
+    width: 20px;
+    height: 10px;
+    border-radius: 12px;
+    background: #ff7757;
+    transform: rotate(-90deg);
+    color: #fff;
+  }
 }
