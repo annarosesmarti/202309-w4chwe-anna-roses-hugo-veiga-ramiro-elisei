@@ -1,5 +1,6 @@
-@use "core/resets";
+@use "./core/resets";
 @use "core/globals";
+@use "./components/container";
 @use "./components/images";
 @use "./components/buttons";
 @use "./variables/colors";
