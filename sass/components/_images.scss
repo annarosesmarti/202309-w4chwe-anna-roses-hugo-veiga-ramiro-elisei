@@ -1,13 +1,41 @@
-.destinations-image {
-  width: 288px;
-  height: 320px;
-  border-radius: 16px;
-  object-fit: cover;
-  position: absolute;
+.image {
+  border-radius: 26px 26px 0px 0px;
 
+  &--border {
+    border-radius: 26px;
+  }
+}
+
+.destinations {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  position: relative;
+  gap: 32px;
+  align-self: stretch;
+  padding-top: 100px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__image {
+    object-fit: cover;
+    position: absolute;
+  }
+
+  &__image,
   &__text {
     width: 288px;
     height: 320px;
+    border-radius: 16px;
+  }
+
+  &--display {
+    display: none;
+  }
+
+  &__text {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -16,10 +44,15 @@
     top: 0;
     left: 0;
     padding: 40px 20px;
-    background-color: rgba(255, 255, 255, 0.536);
   }
+}
 
-  &__icon {
-    display: inline-block;
+@media (min-width: 767px) {
+  .destinations {
+    &__image,
+    &__text {
+      width: 497px;
+      height: 661px;
+    }
   }
 }
