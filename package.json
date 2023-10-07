@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build-styles": "sass sass/styles.sass public/styles/styles.css",
+    "build-styles:dev": "sass sass/styles.sass public/styles/styles.css -w"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "@commitlint/config-conventional": "^17.7.0",
     "husky": "^8.0.0",
     "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "sass": "^1.69.0"
   }
 }
