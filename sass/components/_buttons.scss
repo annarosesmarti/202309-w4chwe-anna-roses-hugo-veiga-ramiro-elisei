@@ -1,9 +1,16 @@
+.arrow_buttons_container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
 .arrow_button {
   padding: 28px 20px;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
 
   &--left {
     width: 20px;
@@ -12,6 +19,7 @@
     background: #172432;
     transform: rotate(90deg);
     color: #fff;
+    font-size: 25px;
   }
   &--right {
     width: 20px;
