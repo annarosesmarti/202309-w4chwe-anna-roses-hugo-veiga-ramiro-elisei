@@ -1,0 +1,9 @@
+@use "../variables/fonts";
+
+:root {
+  font-family: fonts.$font-family-sans-serif;
+}
+
+body {
+  font-family: fonts.$font-family-sans-serif;
+}
