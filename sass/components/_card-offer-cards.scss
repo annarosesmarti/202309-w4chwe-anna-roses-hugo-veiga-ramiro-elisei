@@ -1,14 +1,22 @@
 @use "../variables/colors";
 @use "../variables/fonts";
 @use "../core/globals";
+@use "../components/container";
 
-.card-offers__card {
+.card-offer__cards {
   display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding: 80px 16px 60px 16px;
+}
+
+.card-offer__card {
+  background-color: #fff8f1;
+  border-radius: 26px;
+}
+
+.card-offers__information {
   padding: 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
 }
 
 .card-offers__title {
@@ -23,7 +31,6 @@
 
 .card-offers__description {
   color: colors.$dark-color;
-
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
