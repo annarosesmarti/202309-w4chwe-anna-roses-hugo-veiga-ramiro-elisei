@@ -34,12 +34,14 @@
   }
 }
 
-.details_button {
-  padding: 20px 40px;
+.card__button {
+  padding: 16px 24px;
   border-radius: 12px;
+  gap: 4px;
   background: colors.$primary-color;
   text-transform: uppercase;
   text-align: center;
   color: colors.$light-lightest-color;
   font-family: fonts.$font-family-sans-serif;
+  font-size: 1.25rem;
 }
