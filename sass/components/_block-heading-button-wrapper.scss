@@ -1,8 +1,17 @@
 @use "./block-title-stroke";
 @use "./block-title";
 
+.heading-button-wrapper {
+  padding-bottom: 100px;
+}
+
 .arrow_buttons_container {
-  display: none;
+  &--desktop-visibility {
+    display: none;
+  }
+  &--mobile-visibility {
+    display: inline-flex;
+  }
 }
 
 @media (min-width: 767px) {
@@ -24,6 +33,11 @@
   }
 
   .arrow_buttons_container {
-    display: inline-flex;
+    &--desktop-visibility {
+      display: inline-flex;
+    }
+    &--mobile-visibility {
+      display: none;
+    }
   }
 }

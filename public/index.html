@@ -14,11 +14,18 @@
 
 <body>
   <section class="section-container">
-    <h2>Popular destinations</h2>
-    <div class="arrow_buttons_container">
-      <i class="arrow_button arrow_button--left fa-solid fa-chevron-down"></i>
-      <i class="arrow_button arrow_button--right fa-solid fa-chevron-down"></i>
-    </div>
+    <section class="heading-button-wrapper">
+      <header class="heading">
+        <h2 class="heading__title">Popular Destinations</h2>
+        <div class="heading__stroke stroke-xx-large"></div>
+        <span class="heading__caption">Most popular destinations around the world, from historical places to natural
+          wonders.</span>
+      </header>
+      <div class="arrow_buttons_container arrow_buttons_container--desktop-visibility">
+        <i class="arrow_button arrow_button--left fa-solid fa-chevron-down"></i>
+        <i class="arrow_button arrow_button--right fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
     <div class="destinations">
       <div>
         <img class="destinations__image" src="./images/monument-of-berlin.webp"
@@ -68,17 +75,11 @@
         </div>
       </div>
     </div>
-    <div class="card__footer">
-      <div class="card__price">
-        <span class="card__price__text">From</span>
-        <span class="card__price__number">€500</span>
-      </div>
-      <div class="card__button">
-        details
-      </div>
+    <div class="arrow_buttons_container arrow_buttons_container--mobile-visibility">
+      <i class="arrow_button arrow_button--left fa-solid fa-chevron-down"></i>
+      <i class="arrow_button arrow_button--right fa-solid fa-chevron-down"></i>
     </div>
   </section>
-
   <section class="heading-button-wrapper wrapper-reverse section-container">
     <header class="heading">
       <h2 class="heading__title heading-reverse">Special offers</h2>
@@ -90,6 +91,15 @@
       <i class="arrow_button arrow_button--right fa-solid fa-chevron-down"></i>
     </div>
   </section>
+  <div class="card__footer">
+    <div class="card__price">
+      <span class="card__price__text">From</span>
+      <span class="card__price__number">€500</span>
+    </div>
+    <div class="card__button">
+      details
+    </div>
+  </div>
 </body>
 
 </html>
