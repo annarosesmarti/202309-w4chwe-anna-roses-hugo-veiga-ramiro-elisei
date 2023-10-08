@@ -1,0 +1,44 @@
+@use "../variables/colors";
+
+.heading__stroke {
+  visibility: hidden;
+  background-color: colors.$primary-color;
+  height: 3px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.stroke-xx-small {
+  visibility: visible;
+  width: 150px;
+}
+
+.stroke-x-small {
+  visibility: visible;
+  width: 227px;
+}
+
+.stroke-small {
+  visibility: visible;
+  width: 231px;
+}
+
+.stroke-medium {
+  visibility: visible;
+  width: 241px;
+}
+
+.stroke-large {
+  visibility: visible;
+  width: 283px;
+}
+
+.stroke-x-large {
+  visibility: visible;
+  width: 347px;
+}
+
+.stroke-xx-large {
+  visibility: visible;
+  width: 365px;
+}
