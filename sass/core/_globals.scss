@@ -1,9 +1,5 @@
 @use "../variables/fonts";
 
-:root {
-  font-family: fonts.$font-family-sans-serif;
-}
-
-body {
+html {
   font-family: fonts.$font-family-sans-serif;
 }
