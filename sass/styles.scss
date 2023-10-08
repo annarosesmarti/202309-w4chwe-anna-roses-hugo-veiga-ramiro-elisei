@@ -6,7 +6,4 @@
 @use "./components/images-offer";
 @use "./components/buttons";
 @use "./variables/colors";
-
-h2 {
-  color: colors.$primary-color;
-}
+@use "./components/block-heading-button-wrapper";
