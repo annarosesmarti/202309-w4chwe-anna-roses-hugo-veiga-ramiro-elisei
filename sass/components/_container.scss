@@ -1,3 +1,28 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+
 .section-container {
   padding: 80px 16px;
+}
+
+.price-container {
+  font-family: fonts.$font-family-sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__text {
+    color: colors.$light-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__price {
+    color: colors.$primary-color;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
