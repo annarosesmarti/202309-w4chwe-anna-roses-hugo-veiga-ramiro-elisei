@@ -5,24 +5,40 @@
   padding: 80px 16px;
 }
 
-.price-container {
-  font-family: fonts.$font-family-sans-serif;
+.price-details-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  align-self: stretch;
 
-  &__text {
-    color: colors.$light-color;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  .price-container {
+    font-family: fonts.$font-family-sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__text {
+      color: colors.$light-color;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &__price {
+      color: colors.$primary-color;
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
-  &__price {
-    color: colors.$primary-color;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  .details_button {
+    padding: 20px 40px;
+    border-radius: 12px;
+    background: colors.$primary-color;
+    text-transform: uppercase;
+    text-align: center;
+    color: colors.$light-lightest-color;
+    font-family: fonts.$font-family-sans-serif;
   }
 }
