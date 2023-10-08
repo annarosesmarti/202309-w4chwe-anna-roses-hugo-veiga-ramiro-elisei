@@ -4,3 +4,19 @@
 .section-container {
   padding: 80px 16px;
 }
+
+.margin {
+  &--top {
+    &--small {
+      margin-top: 60px;
+    }
+
+    &--large {
+      margin-top: 100px;
+    }
+  }
+
+  &--bottom {
+    margin-bottom: 60px;
+  }
+}

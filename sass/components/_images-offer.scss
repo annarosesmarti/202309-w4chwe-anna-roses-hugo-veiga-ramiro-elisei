@@ -1,0 +1,21 @@
+.image {
+  border-radius: 26px 26px 0px 0px;
+
+  &--border {
+    border-radius: 26px;
+  }
+
+  &--size {
+    width: 100% 288px;
+    height: 288px;
+  }
+}
+
+@media (min-width: 767px) {
+  .image {
+    &--size {
+      width: 100% 437px;
+      height: 286px;
+    }
+  }
+}
