@@ -5,9 +5,9 @@
   padding: 80px 16px;
 }
 
-.price-details-container {
+.price-details-button-wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
   align-self: stretch;
 }
@@ -33,14 +33,4 @@
     font-weight: 400;
     line-height: normal;
   }
-}
-
-.details_button {
-  padding: 20px 40px;
-  border-radius: 12px;
-  background: colors.$primary-color;
-  text-transform: uppercase;
-  text-align: center;
-  color: colors.$light-lightest-color;
-  font-family: fonts.$font-family-sans-serif;
 }
