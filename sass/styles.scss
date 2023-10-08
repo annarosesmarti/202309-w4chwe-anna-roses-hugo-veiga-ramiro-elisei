@@ -3,4 +3,6 @@
 @use "./components/images";
 @use "./components/buttons";
 @use "./variables/colors";
-@use "components/block-title";
+@use "./components/block-title";
+@use "./components/block-title-stroke";
+@use "./components/_block-title-wrapper";

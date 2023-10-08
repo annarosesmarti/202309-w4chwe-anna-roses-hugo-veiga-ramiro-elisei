@@ -1,5 +1,6 @@
 @use "../variables/colors";
 @use "../variables/fonts";
+@use "block-title-stroke";
 
 .heading {
   .heading__title {
@@ -9,25 +10,26 @@
     font-weight: 400;
     font-style: normal;
   }
-  .heading__stroke {
-    background-color: colors.$primary-color;
-    height: 3px;
-    width: 227px;
-    margin-top: 20px;
-    margin-bottom: 32px;
-  }
+
   .heading__caption {
     color: colors.$light-color;
     font-size: 18px;
+    margin-top: 20px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media (min-width: 767px) {
+    .heading {
+      display: flex;
+    }
+
+    .arrow_buttons_container {
+      display: block;
+    }
+
     .heading__title {
       font-size: 64px;
     }
-    .heading__stroke {
-      width: 241px;
-    }
+
     .heading__caption {
       color: colors.$light-color;
       font-size: 24px;
