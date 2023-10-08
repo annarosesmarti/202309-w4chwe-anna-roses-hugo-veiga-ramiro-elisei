@@ -1,14 +1,6 @@
 @use "../variables/colors";
 @use "../variables/fonts";
 
-.image {
-  border-radius: 26px 26px 0px 0px;
-
-  &--border {
-    border-radius: 26px;
-  }
-}
-
 .destinations {
   display: flex;
   flex-direction: row;
@@ -16,7 +8,6 @@
   position: relative;
   gap: 32px;
   align-self: stretch;
-  padding-top: 100px;
 
   &::-webkit-scrollbar {
     display: none;
