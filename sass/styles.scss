@@ -4,7 +4,3 @@
 @use "./components/images";
 @use "./components/buttons";
 @use "./variables/colors";
-
-h2 {
-  color: colors.$primary-color;
-}
