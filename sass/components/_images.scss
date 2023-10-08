@@ -1,3 +1,6 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+
 .image {
   border-radius: 26px 26px 0px 0px;
 
@@ -22,6 +25,7 @@
   &__image {
     object-fit: cover;
     position: absolute;
+    filter: sepia(0.2);
   }
 
   &__image,
@@ -29,10 +33,6 @@
     width: 288px;
     height: 320px;
     border-radius: 16px;
-  }
-
-  &--display {
-    display: none;
   }
 
   &__text {
@@ -44,6 +44,33 @@
     top: 0;
     left: 0;
     padding: 40px 20px;
+    color: colors.$light-lightest-color;
+
+    &--font-family {
+      font-family: fonts.$font-family-serif;
+      font-size: 24px;
+      display: inline-block;
+    }
+  }
+
+  &__location {
+    &--font-family {
+      font-size: 18px;
+    }
+
+    &--separation {
+      margin-right: 16px;
+    }
+
+    &--block {
+      display: flex;
+      flex-direction: row;
+      margin-top: 17px;
+    }
+  }
+
+  &--display {
+    display: none;
   }
 }
 
@@ -53,6 +80,15 @@
     &__text {
       width: 497px;
       height: 661px;
+      &--font-family {
+        font-size: 28px;
+      }
+    }
+
+    &__location {
+      &--font-family {
+        font-size: 24px;
+      }
     }
   }
 }
