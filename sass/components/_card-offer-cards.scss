@@ -1,0 +1,38 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+@use "../core/globals";
+@use "../components/container";
+
+.card-offer__cards {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding: 80px 16px 60px 16px;
+}
+
+.card-offer__card {
+  background-color: #fff8f1;
+  border-radius: 26px;
+}
+
+.card-offers__information {
+  padding: 20px;
+}
+
+.card-offers__title {
+  color: colors.$light-color;
+  font-style: normal;
+  line-height: normal;
+}
+
+.card-offers__rating {
+  color: #ffc107;
+}
+
+.card-offers__description {
+  color: colors.$dark-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
