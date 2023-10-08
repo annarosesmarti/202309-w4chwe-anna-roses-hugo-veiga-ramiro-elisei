@@ -1,3 +1,6 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+
 .arrow_buttons_container {
   display: flex;
   align-items: flex-end;
@@ -16,17 +19,29 @@
     width: 20px;
     height: 10px;
     border-radius: 12px;
-    background: #172432;
+    background: colors.$dark-color;
     transform: rotate(90deg);
-    color: #fff;
+    color: colors.$light-lightest-color;
     font-size: 25px;
   }
   &--right {
     width: 20px;
     height: 10px;
     border-radius: 12px;
-    background: #ff7757;
+    background: colors.$primary-color;
     transform: rotate(-90deg);
-    color: #fff;
+    color: colors.$light-lightest-color;
   }
+}
+
+.card__button {
+  padding: 16px 24px;
+  border-radius: 12px;
+  gap: 4px;
+  background: colors.$primary-color;
+  text-transform: uppercase;
+  text-align: center;
+  color: colors.$light-lightest-color;
+  font-family: fonts.$font-family-sans-serif;
+  font-size: 1.25rem;
 }

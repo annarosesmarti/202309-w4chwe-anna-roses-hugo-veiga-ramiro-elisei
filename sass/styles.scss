@@ -1,8 +1,11 @@
-@use "core/resets";
+@use "./core/resets";
 @use "core/globals";
+@use "./components/card-offer";
+@use "./components/container";
 @use "./components/images";
 @use "./components/buttons";
 @use "./variables/colors";
-@use "./components/block-title";
-@use "./components/block-title-stroke";
-@use "./components/_block-heading-button-wrapper";
+
+h2 {
+  color: colors.$primary-color;
+}
