@@ -5,7 +5,7 @@
   padding: 80px 16px;
 }
 
-.price-details-button-wrapper {
+.card__footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -13,7 +13,7 @@
   align-self: stretch;
 }
 
-.price-container {
+.card__price {
   font-family: fonts.$font-family-sans-serif;
   display: flex;
   align-items: center;
@@ -37,13 +37,13 @@
 }
 
 @media (min-width: 767px) {
-  .price-details-button-wrapper {
+  .card__footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     align-self: stretch;
   }
-  .price-container {
+  .card__price {
     font-family: fonts.$font-family-sans-serif;
     display: flex;
     align-items: center;
